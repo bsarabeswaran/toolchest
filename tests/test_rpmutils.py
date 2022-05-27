@@ -59,8 +59,8 @@ class test_split_filename(unittest.TestCase):
                 ('', '1.2', '', '', ''))
 
     def test_absurd(self):
-        assert (split_filename('1:aarch64-ppc64le-i686-0.1-1.el7ost.src.rpm') ==
-                ('aarch64-ppc64le-i686', '0.1', '1.el7ost', '1', ''))
+        assert (split_filename('1:aarch64-ppc64le-i686-0.1-1.el7ost.src.rpm') == # NOQA
+                ('aarch64-ppc64le-i686', '0.1', '1.el7ost', '1', '')) # NOQA
         assert (split_filename('m-e-g-a-f-o-o-1.0-36.123.1333.elite.omg.long.el7ost.1.noarch.rpm') ==  # NOQA
                 ('m-e-g-a-f-o-o', '1.0', '36.123.1333.elite.omg.long.el7ost.1', '', 'noarch'))   # NOQA
 
